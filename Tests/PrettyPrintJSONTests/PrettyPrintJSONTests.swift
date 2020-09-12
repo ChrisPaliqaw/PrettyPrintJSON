@@ -28,9 +28,6 @@ final class PrettyPrintJSONTests: XCTestCase {
     }
     
     func testEncodableObject_prettyPrintsCorrectly() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
         let data = try! JSONEncoder().encode(testObject)
         XCTAssertEqual(PrettyPrintJSON.with(data: data), testJSON)
     }
